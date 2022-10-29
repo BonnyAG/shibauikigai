@@ -5,9 +5,11 @@ import Plans from "../components/Plans";
 const Services = () => {
   return (
     <>
-      <Header/>
-      <Plans />
-      <Offers />
+      <div className="mx-auto max-w-7xl bg-white px-4 sm:px-6 lg:px-8">
+        <Header/>
+        <Plans />
+        <Offers />
+      </div>
     </>
     )
   };

@@ -1,6 +1,11 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export const Contact = () => {
+  function comingSoon(e) {
+    e.preventDefault();
+    alert("Coming Soon!");
+  }
+
   return (
     <div className="relative bg-white">
       <div className="absolute inset-0">
@@ -96,6 +101,7 @@ export const Contact = () => {
               <div>
                 <button
                   type="submit"
+                  onClick={comingSoon}
                   className="inline-flex justify-center rounded-md border border-transparent bg-violet py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-violet-800 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-offset-2"
                 >
                   Submit

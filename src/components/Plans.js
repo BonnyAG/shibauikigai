@@ -3,43 +3,68 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 const pricing = {
   tiers: [
     {
-      title: 'Freelancer',
-      price: 24,
-      frequency: '/month',
-      description: 'The essentials to provide your best work for clients.',
-      features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
-      cta: 'Monthly billing',
+      title: 'Anti Gymnastics - 11 Pack',
+      price: 180,
+      description: '11 Anti-Gymnastics sessions that you can use at your pace.',
+      features: [
+        'Flexible schedule',
+        'No expiration date',
+        'One-on-One or Group Session',
+        '20% Discount over regular rate'
+      ],
+      cta: 'Save with a Pack',
       mostPopular: false,
     },
     {
-      title: 'Startup',
-      price: 32,
-      frequency: '/month',
-      description: 'A plan that scales with your rapidly growing business.',
+      title: 'Therapeutic Art - 10 Pack',
+      price: 180,
+      description: '10 Therapeutic Art sessions that you can use at your pace.',
       features: [
-        '25 products',
-        'Up to 10,000 subscribers',
-        'Advanced analytics',
-        '24-hour support response time',
-        'Marketing automations',
+        'Flexible schedule',
+        'No expiration date',
+        'One-on-One or Group Session',
+        '15% Discount over regular rate'
       ],
-      cta: 'Monthly billing',
+      cta: 'Save with a Pack',
+      mostPopular: false,
+    },
+    {
+      title: 'Meditation - 10 Pack',
+      price: 180,
+      description: '10 Meditation sessions that you can use at your pace.',
+      features: [
+        'Flexible schedule',
+        'No expiration date',
+        'One-on-One or Group Session',
+        '15% Discount over regular rate'
+      ],
+      cta: 'Save with a Pack',
+      mostPopular: false,
+    },
+    {
+      title: 'Anti-Stress Program',
+      price: 430,
+      description: '10 Meditation sessions that you can use at your pace.',
+      features: [
+        '8 week program',
+        'No expiration date',
+        'Personalized Program',
+        '30% Discount over regular rate'
+      ],
+      cta: 'Get the Plan',
       mostPopular: true,
     },
     {
-      title: 'Enterprise',
-      price: 48,
-      frequency: '/month',
-      description: 'Dedicated support and infrastructure for your company.',
+      title: 'Ultimate 10-Session Pack',
+      price: 540,
+      description: '10 Meditation sessions, 10 Therapeutic Art sessions, and 11 Anti-Gymnastic sessions that you can use at your pace.',
       features: [
-        'Unlimited products',
-        'Unlimited subscribers',
-        'Advanced analytics',
-        '1-hour, dedicated support response time',
-        'Marketing automations',
-        'Custom integrations',
+        'Flexible schedule',
+        'No expiration date',
+        'One-on-One or Group Session',
+        '20% Discount over regular rate'
       ],
-      cta: 'Monthly billing',
+      cta: 'Save with a Pack',
       mostPopular: false,
     },
   ],
@@ -49,19 +74,23 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+function comingSoon(e) {
+  e.preventDefault();
+  alert("Coming Soon");
+}
+
 export const Plans = () => {
   return (
     <div className="mx-auto max-w-7xl bg-white py-24 px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none lg:text-6xl">
-        Pricing plans for teams of all sizes
+        Our Services
       </h2>
       <p className="mt-6 max-w-2xl text-xl text-gray-500">
-        Choose an affordable plan that's packed with the best features for engaging your audience, creating customer
-        loyalty, and driving sales.
+        Whether you want a single session to try it out or a pack to save on your sessions, we have an option for you!
       </p>
 
       {/* Tiers */}
-      <div className="mt-24 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+      <div className="mt-12 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0 lg:gap-y-12">
         {pricing.tiers.map((tier) => (
           <div
             key={tier.title}
@@ -70,13 +99,12 @@ export const Plans = () => {
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-gray-900">{tier.title}</h3>
               {tier.mostPopular ? (
-                <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-indigo-500 py-1.5 px-4 text-sm font-semibold text-white">
+                <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-violet py-1.5 px-4 text-sm font-semibold text-white">
                   Most popular
                 </p>
               ) : null}
               <p className="mt-4 flex items-baseline text-gray-900">
                 <span className="text-5xl font-bold tracking-tight">${tier.price}</span>
-                <span className="ml-1 text-xl font-semibold">{tier.frequency}</span>
               </p>
               <p className="mt-6 text-gray-500">{tier.description}</p>
 
@@ -84,7 +112,7 @@ export const Plans = () => {
               <ul role="list" className="mt-6 space-y-6">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex">
-                    <CheckIcon className="h-6 w-6 flex-shrink-0 text-indigo-500" aria-hidden="true" />
+                    <CheckIcon className="h-6 w-6 flex-shrink-0 text-violet-500" aria-hidden="true" />
                     <span className="ml-3 text-gray-500">{feature}</span>
                   </li>
                 ))}
@@ -93,10 +121,11 @@ export const Plans = () => {
 
             <a
               href="#"
+              onClick={comingSoon}
               className={classNames(
                 tier.mostPopular
-                  ? 'bg-indigo-500 text-white hover:bg-indigo-600'
-                  : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
+                  ? 'bg-violet text-white hover:bg-violet-800 transition'
+                  : 'bg-violet-100 text-violet hover:bg-violet-200',
                 'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium'
               )}
             >

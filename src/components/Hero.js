@@ -33,8 +33,7 @@ export const Hero = () => {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
-                    onClick={comingSoon}
+                    href="/services"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#662483] px-8 py-3 text-base font-medium text-white hover:bg-[#B46DD0] md:py-4 md:px-10 md:text-lg"
                   >
                     Schedule an appointment

@@ -1,5 +1,15 @@
+import { Header } from "../components/Header";
+import Offers from "../components/Offers";
+import Plans from "../components/Plans";
+
 const Services = () => {
-    return <h1>Services</h1>;
+  return (
+    <>
+      <Header/>
+      <Plans />
+      <Offers />
+    </>
+    )
   };
   
   export default Services;

@@ -7,7 +7,12 @@ const navigation = [
     { name: 'Services', href: '/services' },
   ]
   
-    export const Header = () => {
+export const Header = () => {
+  function comingSoon(e) {
+    e.preventDefault();
+    alert("Coming Soon!");
+  }
+
     return (
       <Popover>
         <div className="relative px-4 pt-6 sm:px-6 lg:px-4">
@@ -36,7 +41,7 @@ const navigation = [
                   {item.name}
                 </a>
               ))}
-              <a href="#" className="font-medium text-[#662483] hover:text-[#B46DD0]">
+              <a href="#" onClick={comingSoon} className="font-medium text-[#662483] hover:text-[#B46DD0]">
                 Donate
               </a>
             </div>

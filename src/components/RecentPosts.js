@@ -21,7 +21,7 @@ const posts = [
     },
     {
       title: 'Daily Practices for Mindfulness',
-      href: '#',
+      href: '/blog/daily-practices',
       category: { name: 'Methodology', href: '#', color: 'bg-green-100 text-green-800' },
       description: 'In this post I share a few daily practices that take you less than 10 min/day that greatly improve mindfulness.',
       date: 'Sep 25, 2022',

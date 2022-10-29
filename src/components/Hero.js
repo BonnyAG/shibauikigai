@@ -1,6 +1,10 @@
 import { Header } from "./Header";
 
 export const Hero = () => {
+  function comingSoon(e) {
+    e.preventDefault();
+    alert("Coming Soon!");
+  }
   return (
     <div className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl">
@@ -30,6 +34,7 @@ export const Hero = () => {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
+                    onClick={comingSoon}
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#662483] px-8 py-3 text-base font-medium text-white hover:bg-[#B46DD0] md:py-4 md:px-10 md:text-lg"
                   >
                     Schedule an appointment
@@ -38,6 +43,7 @@ export const Hero = () => {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
+                    onClick={comingSoon}
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-violet-100 px-8 py-3 text-base font-medium text-violet hover:bg-violet-200 md:py-4 md:px-10 md:text-lg"
                   >
                     Donate

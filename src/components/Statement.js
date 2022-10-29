@@ -1,56 +1,37 @@
 import {
-    ArrowPathIcon,
-    CloudArrowUpIcon,
-    CogIcon,
-    LockClosedIcon,
-    ServerIcon,
-    ShieldCheckIcon,
+    PaintBrushIcon, BoltIcon, LifebuoyIcon
   } from '@heroicons/react/24/outline'
   
   const features = [
     {
-      name: 'Push to Deploy',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: CloudArrowUpIcon,
+      name: 'Therapeutic Art',
+      description: 'Therapeutic art focuses on unlocking your creativity, facilitate emotional expressional, and encourage self-discovery.',
+      icon: PaintBrushIcon,
     },
     {
-      name: 'SSL Certificates',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: LockClosedIcon,
+      name: 'Anti-Gymnastic',
+      description: 'Anti-gymnastic is an exercise method that seeks to improve awareness and control over all parts of your body.',
+      icon: BoltIcon,
     },
     {
-      name: 'Simple Queues',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: ArrowPathIcon,
-    },
-    {
-      name: 'Advanced Security',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: ShieldCheckIcon,
-    },
-    {
-      name: 'Powerful API',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: CogIcon,
-    },
-    {
-      name: 'Database Backups',
-      description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-      icon: ServerIcon,
+      name: 'Life Coaching',
+      description: 'A life coach session is a conversation between you and your coach focused on helping you set and reach your life goals.',
+      icon: LifebuoyIcon,
     },
   ]
+
+
   
   export const Statement = () => {
     return (
-      <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+      <div className="relative bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-lg font-semibold text-indigo-600">Deploy faster</h2>
+          <h2 className="text-lg font-semibold text-violet-800">What we offer</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Become more mindful in a way that suits you
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-            malesuada. Eleifend condimentum id viverra nulla.
+            There's many ways to improve mindfulness and concentration. That's why we offer several techniques so you can choose which one suits you best!
           </p>
           <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -59,7 +40,7 @@ import {
                   <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                        <span className="inline-flex items-center justify-center rounded-md bg-violet-700 p-3 shadow-lg">
                           <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                         </span>
                       </div>

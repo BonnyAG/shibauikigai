@@ -15,6 +15,8 @@ module.exports = {
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
+      pink: colors.pink,
+      green: colors.green,
       'violet': {
         DEFAULT: '#662483',
         100: '#FFE8FF',
@@ -30,5 +32,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

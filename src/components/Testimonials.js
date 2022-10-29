@@ -59,7 +59,7 @@ export const Testimonials = () => {
   
             <div className="relative lg:ml-10">
               <svg
-                className="absolute top-0 left-0 h-36 w-36 -translate-x-8 -translate-y-24 transform text-indigo-200 opacity-50"
+                className="absolute top-0 left-0 h-36 w-36 -translate-x-8 -translate-y-24 transform text-violet-200 opacity-50"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 144 144"
@@ -73,8 +73,7 @@ export const Testimonials = () => {
               <blockquote className="relative">
                 <div className="text-2xl font-medium leading-9 text-gray-900">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                    molestiae. Numquam corrupti in laborum sed rerum et corporis.
+                    I've loved doing monthly life coaching sessions with Silvia! She's helped me set new goals and create step by step plans to reach them and it has made all of the difference.
                   </p>
                 </div>
                 <footer className="mt-8">
@@ -88,7 +87,6 @@ export const Testimonials = () => {
                     </div>
                     <div className="ml-4 lg:ml-0">
                       <div className="text-base font-medium text-gray-900">Judith Black</div>
-                      <div className="text-base font-medium text-indigo-600">CEO, Tuple</div>
                     </div>
                   </div>
                 </footer>

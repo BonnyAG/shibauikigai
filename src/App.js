@@ -7,6 +7,7 @@ import Mission from "./pages/Mission";
 import Services from "./pages/Services";
 import Shop from "./pages/Shop";
 import NoPage from "./pages/NoPage";
+import DailyPractices from "./blog/DailyPractices";
 
 export default function App() {
   return (
@@ -19,6 +20,9 @@ export default function App() {
           <Route path="services" element={<Services />} />
           <Route path="shop" element={<Shop />} />
           <Route path="*" element={<NoPage />} />
+        </Route>
+        <Route path="/blog" element={<Layout />}>
+          <Route path="daily-practices" element={<DailyPractices/>} />
         </Route>
       </Routes>
     </BrowserRouter>

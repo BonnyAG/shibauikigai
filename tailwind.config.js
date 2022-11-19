@@ -16,6 +16,7 @@ module.exports = {
       indigo: colors.indigo,
       yellow: colors.yellow,
       pink: colors.pink,
+      'blue-gray': colors.blueGray,
       green: colors.green,
       'violet': {
         DEFAULT: '#662483',

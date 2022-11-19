@@ -8,6 +8,9 @@ import Services from "./pages/Services";
 import Shop from "./pages/Shop";
 import NoPage from "./pages/NoPage";
 import DailyPractices from "./blog/DailyPractices";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Profile from "./pages/Profile";
 
 export default function App() {
   return (
@@ -20,6 +23,9 @@ export default function App() {
           <Route path="services" element={<Services />} />
           <Route path="shop" element={<Shop />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="sign-up" element={<Signup />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
         <Route path="/blog" element={<Layout />}>
           <Route path="daily-practices" element={<DailyPractices/>} />
@@ -28,6 +34,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);

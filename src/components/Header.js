@@ -41,8 +41,8 @@ export const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <a href="#" onClick={comingSoon} className="font-medium text-[#662483] hover:text-[#B46DD0]">
-                Donate
+              <a href="/login" className="font-medium text-[#662483] hover:text-[#B46DD0]">
+                Log in
               </a>
             </div>
           </nav>
@@ -92,7 +92,7 @@ export const Header = () => {
                 href="#"
                 className="block w-full bg-violet-100 px-5 py-3 text-center font-medium text-violet hover:bg-violet-200"
               >
-                Donate
+                Log in
               </a>
             </div>
           </Popover.Panel>

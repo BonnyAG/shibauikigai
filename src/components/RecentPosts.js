@@ -51,9 +51,9 @@ const posts = [
               your brain does in the background and how to get better at taking control. 
             </p>
           </div>
-          <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+          <div className="mt-12 grid gap-12 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
             {posts.map((post) => (
-              <div key={post.title}>
+              <div key={post.title} className="hover:bg-gray-100 p-4 rounded-lg transition">
                 <div>
                   <a href={post.category.href} className="inline-block">
                     <span
